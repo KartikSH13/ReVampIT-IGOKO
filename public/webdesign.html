@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productive Web Design Services</title>
+  <style>
+  /* styles.css */
+
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Home Section Styles */
+  #home {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  #home h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Services Section Styles */
+  #services {
+    padding: 100px 0;
+  }
+  
+  .service {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .service img {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    color: #777;
+  }
+  
+  /* Portfolio Section Styles */
+  #portfolio {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .gallery img {
+    max-width: 30%;
+  }
+  
+  /* About Section Styles */
+  #about {
+    padding: 100px 0;
+  }
+  
+  /* Contact Section Styles */
+  #contact {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form textarea {
+    height: 150px;
+  }
+  
+  .btn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+/* Header section */
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+}
+
+#header .header {
+	min-height: 12vh;
+	background-color: rgb(233, 233, 233);
+	transition: 0.3s ease background-color;
+}
+
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	padding: 0 20px;
+}
+
+#header .nav-list ul {
+	list-style: none;
+	position: absolute;
+	background-color: rgb(31, 30, 30);
+	left: 174rem;
+	width: 174rem;
+	height: 100vh;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	overflow-x: hidden;
+	transition: 0.5s ease left;
+}
+
+#header .nav-list ul.active {
+	left: 0%;
+}
+
+#header .nav-list ul li {
+	padding: 1rem;
+}
+
+#header .nav-list ul a {
+	font-size: 2.5rem;
+	font-weight: bolder;
+	letter-spacing: 0.1rem;
+	text-decoration: none;
+	color: rgb(6, 18, 49);
+	text-transform: uppercase;
+	padding: 0.5rem;
+	display: block;
+}
+
+#header .nav-list ul a::after {
+	content: attr(data-after);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	color: rgba(240, 248, 255, 0.021);
+	font-size: 13rem;
+	letter-spacing: 50px;
+	z-index: -1;
+	transition: 0.3s ease letter-spacing;
+}
+
+#header .nav-list ul li:hover a::after {
+	transform: translate(-50%, -50%) scale(1);
+	letter-spacing: initial;
+}
+
+#header .nav-list ul li:hover a {
+	color: #fff;
+	background-color: rgb(6, 18, 49);
+	border-radius: 1rem;
+}
+
+#header .hamburger {
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	border: 3px solid rgb(6, 18, 49);
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	cursor: pointer;
+	transform: scale(0.8);
+	margin-right: 20px;
+}
+
+#header .hamburger:after {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 3px solid rgb(6, 18, 49);
+	animation: hamburger_puls 1s ease infinite;
+}
+
+#header .hamburger .bar {
+	height: 2px;
+	width: 30px;
+	position: relative;
+	background-color: rgb(6, 18, 49);
+	z-index: -1;
+}
+
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	background-color: rgb(6, 18, 49);
+	transition: 0.3s ease;
+	transition-property: top, bottom;
+}
+
+#header .hamburger .bar::after {
+	top: 8px;
+}
+
+#header .hamburger .bar::before {
+	bottom: 8px;
+}
+
+#header .hamburger.active{
+	border: 3px solid #fff;
+}
+#header .hamburger.active::after {
+	background-color: #fff;
+
+}
+#header .hamburger.active .bar::before {
+	background-color: #fff;
+	bottom: 0;
+}
+
+#header .hamburger.active .bar::after {
+	background-color: #fff;
+	top: 0;
+}
+#header .hamburger.active+ul a{
+	color: #fff;
+
+}
+
+ </style>
+ <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/64981df4cc26a871b0248e9e/1h3p3a1f0";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  </head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="container">
+        <h1 class="logo">WEB DESIGNING SERVICES </h1>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h2>Welcome to Productive Web Design Services</h2>
+      <p>We create stunning websites that drive results and help your business grow.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service">
+        <img src="img/wd1.jpeg" alt="Web Design">
+        <h3>Web Design</h3>
+        <p>We design beautiful and user-friendly websites that align with your brand.</p>
+      </div>
+      <div class="service">
+        <img src="img/wd2.jpeg" alt="Web Development">
+        <h3>Web Development</h3>
+        <p>We develop robust and scalable web applications using the latest technologies.</p>
+      </div>
+      <div class="service">
+        <img src="img/wd3.jpeg" alt="Responsive Design">
+        <h3>Responsive Design</h3>
+        <p>We ensure your website looks great and functions flawlessly on all devices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Our Portfolio</h2>
+      <div class="gallery">
+        <img src="img/p1.jpg" alt="Project 1">
+        <img src="img/p2.jpeg" alt="Project 2">
+        <img src="img/p3.jpeg" alt="Project 3">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a team of passionate web designers and developers committed to delivering exceptional websites that help businesses succeed in the digital world.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us to discuss your project requirements.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Productive Web Design Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

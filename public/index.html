@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igoko Avionics</title>
+    <link rel="icon" href="./img/favicon.jpg" type="image/jpg">
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css" rel="stylesheet"/>
+    <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"/>
+    <!-- Css -->
+
+    <script src="https://kit.fontawesome.com/fa859b5728.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/InertiaPlugin.min.js"></script>
+    <script src="./atropos/atropos.min.js"></script>
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/64981df4cc26a871b0248e9e/1h3p3a1f0";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <script defer src="./js/index.js"></script>
+    <script src="./js/visitor.js"></script>
+    <script defer src="./js/serverData.js"></script>
+
+  </head>
+
+  <body onload="homeVisitor();loadCategories();">
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1>
+                <span class="text-gradient">I</span>goko
+                <span class="text-gradient">A</span>vionics
+              </h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#services" data-after="Services">Services</a></li>
+              <li><a href="#projects" data-after="Projects">Projects</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#product-page" data-after="Product">Product</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+              <li><a href="/careers" data-after="Careers">Careers</a></li>
+              <li><a href="http://localhost:3001" data-after="Careers">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Hero Section  -->
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1 class="head-1">Hello, <span></span></h1>
+          <h1 class="head-2">welcome to <span></span></h1>
+          <h1 class="head-3 text-gradient">Igoko Avionics <span></span></h1>
+          <a href="#projects" type="button" class="cta target">Start Project</a>
+        </div>
+        <div class="slides-container target">
+          <div class="slides-inner">
+            <div class="slide">
+              <div class="atropos atropos-1">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                  <!-- rotate container (required) -->
+                  <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                      <img
+                        src="./img/vr.png"
+                        class="atropos-image"
+                      />
+                      <h1>Website development</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="atropos atropos-2">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                  <!-- rotate container (required) -->
+                  <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                      <img
+                        src="./img/app-develop.png"
+                        class="atropos-image"
+                      />
+                      <h1>UI design</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="atropos atropos-3">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                  <!-- rotate container (required) -->
+                  <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                      <img
+                        src="./img/car-rental.png"
+                        class="atropos-image"
+                      />
+                      <h1>Email Marketing</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="slide">
+              <div class="atropos atropos-4">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                  <!-- rotate container (required) -->
+                  <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                      <img
+                        src="./img/marketing.png"
+                        class="atropos-image"
+                      />
+                      <h1>Digital Media</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="slide">
+              <div class="atropos atropos-5">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                  <!-- rotate container (required) -->
+                  <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                      <img
+                        src="./img/84-846267_seo-transparent-png-seo-images-in-png.png"
+                        alt=""
+                        class="atropos-image"
+                      />
+                      <h1>SEO Services</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="slide">
+              <div class="atropos atropos-6">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                  <!-- rotate container (required) -->
+                  <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                      <img
+                        src="./img/startup.png"
+                        alt=""
+                        class="atropos-image"
+                      />
+                      <h1>Social Media</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section  -->
+
+    <!-- Service Section -->
+    <section id="services">
+      <div class="services container">
+        <div class="service-top">
+          <h1 class="section-title">Serv<span>i</span>ces</h1>
+          <h3>Value added WebDesign Services!</h3>
+          <p>
+            Over the years, we have worked with Fortune 100s and brand-new
+            startups. We help ambitious businesses like yours generate more
+            profits by building awareness, driving web traffic, connecting with
+            customers, and growing overall sales. Give us a call
+          </p>
+        </div>
+        <div class="service-bottom">
+          <div class="service-item target">
+            <div class="icon target">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/services.png"
+              />
+            </div>
+            <h2>Web Designing</h2>
+            <p>
+              We’ve been designing top quality websites for just shy of 3 years now. Website redesign RFPs can range from useful and informative to downright meaningless boilerplate content.
+            </p>
+            <a href="webdesign.html">
+            <button>Order now</button></a>
+          </div>
+          <div class="service-item target" style="animation-delay: 0.1s">
+            <div class="icon target">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/services.png"
+              />
+            </div>
+            <h2>Web Handling</h2>
+            <p>
+              The goal is to control the flexible web through the machine rather than to modify it. Proper web handling is crucial as it ensures maximum productivity and minimum waste
+            </p>
+            <a href="webhandling.html">
+            <button>Order now</button></a>
+          </div>
+          <div class="service-item target" style="animation-delay: 0.2s">
+            <div class="icon target">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/services.png"
+              />
+            </div>
+            <h2>Web Developing</h2>
+            <p>
+             Our job is to create websites. While their primary role is to ensure the website is visually appealing and easy to navigate, many web developers are also responsible for the website’s performance and capacity. 
+            </p>
+            <button>Order now</button>
+          </div>
+          <div class="service-item target" style="animation-delay: 0.3s">
+            <div class="icon target">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/services.png"
+              />
+            </div>
+            <h2>UI/UX Design</h2>
+            <p>
+              We design communicates the brand value of the company/organization, while UX design deals with how users interact with the system, including logical navigation and how smooth and intuitive the experience is. UI/UX design has emerged as the framing approach to all digital design, including websites, apps, and other devices.
+            </p>
+            <button>Order now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 class="section-title">Recent <span>Projects</span></h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item project-1">
+            <div class="project-info">
+              <h1>Project 1</h1>
+              <h2><b>Packers & Movers</b> </h2><br>
+                <p>
+                packers and movers to do our relocation tasks we get ourselves into following advantages:
+                <p>1. It saves our time</p>
+                <p>2. We can spend our time on some other useful task.</p>
+                <p>3. We don’t have to worry anything about packing/unpacking and loading/unloading of items</p>
+                </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/Truck.gif" alt="img" />
+            </div>
+          </div>
+          <div class="project-item project-2">
+            <div class="project-info">
+              <h1>Project 2</h1>
+              <h2><b>Online Learning System</b></h2><br>
+              <p>
+                E-Learning is changing the usual learning experience. 
+                It has become the new standard way of learning and 
+                is highly beneficial to students due to its flexibility, low cost, and user experience.
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/learning system.gif" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Project 3</h1>
+              <h2><b><br>Brick & Breaks Game</b></h2>
+              <br>
+              <p>
+                One of the most enjoyable methods to learn technology is through game development. 
+                It isn’t easy, but if you want to make a game, this information will help you.
+                The focus of this article is on the basic implementation methods for creating a simple game for novices.
+                 It will assist you in gaining a more practical grasp.
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/breaker.gif" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Project 4</h1>
+              <h2><b><br>Snake Game</b></h2>
+              <br>
+              <p>
+                Snake game is a sub-genre of action video games where the player maneuvers the end of a growing line, often themed as a snake. The player must keep the snake from colliding with both other obstacles and itself, which gets harder as the snake lengthens. The game originated in the 1976 two-player arcade video game Blockade from Gremlin Industries, where the goal is to survive longer than the other player
+                </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/snake.gif" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Project 5</h1>
+              <h2><b><br>Car Racing</b></h2>
+              <br>
+              <p>
+                All classic games have great controls. Jumping on things as Mario is fun, soaring over Gotham as Batman is fun, shooting people in Call of Duty is fun. In a racing game, great control means enough grip to be responsive and 'go where you want to go', but slippery enough that there's some degree of challenge in driving well. Extra depth like a drifting system or controlling wheelspin can also be fun. If a racing game doesn't feel right, is too slow, too slidey, too grippy or even uncontrollably fast, it isn't a fun experience. 
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/car.gif" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!--  Project slider mask-->
+    <div style="display: flex" class="container">
+      <div class="nav-dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div style="display: flex" class="special-mask">
+        <div class="left">
+          <div class="special-image-mask web">
+            <img
+              src="./img/corporate-web.gif"
+              alt="Image 1"
+            />
+          </div>
+          <div class="special-image-mask digital">
+            <img
+              src="./img/seo_dm.gif"
+              alt="Image 2"
+            />
+          </div>
+          <div class="special-image-mask social">
+            <img
+              src="./img/digital-marketing-company.gif"
+              alt="Image 3"
+            />
+          
+          </div>
+        </div>
+        <div class="right">
+          
+          <section class="step" data-index="1">
+            <div class="desc-mask">
+              <span class="tag">Great Design</span>
+              <h1 class="heading">Create best WEB Platform</h1>
+              <p class="description">
+                Track your progress, analyze speech trends over time, and
+                improve your speaking for your most important meetings. No more
+                wondering how you did.
+              </p>
+            </div>
+            <div class="image-mask web">
+              <img
+                src="./img/corporate-web.gif"
+                alt="Image 1"
+              />
+            </div>
+          </section>
+          <section class="step" data-index="2">
+            <div class="desc-mask">
+              <span class="tag">Detailed Analysis</span>
+              <h1 class="heading">Analyze trends over time</h1>
+              <p class="description">
+                Track your progress, analyze speech trends over time, and
+                improve your speaking for your most important meetings. No more
+                wondering how you did.
+              </p>
+            </div>
+            <div class="image-mask digital">
+              <img
+                src="./img/seo_dm.gif"
+                alt="Image 2"
+              />
+            </div>
+          </section>
+          <section class="step" data-index="3">
+            <div class="desc-mask">
+              <span class="tag">Detailed Analysis</span>
+              <h1 class="heading">Social Media Marketing</h1>
+              <p class="description">
+                Track your progress, analyze speech trends over time, and
+                improve your speaking for your most important meetings. No more
+                wondering how you did.
+              </p>
+            </div>
+            <div class="image-mask social">
+              <img
+                src="./img/digital-marketing-company.gif"
+                alt="Image 3"
+              />
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!--  End Project slider mask-->
+
+   
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-statistic">
+        <div class="statistic-item">
+          <div class="statistic-icon">
+            <i class="fa fa-handshake"></i>
+          </div>
+          <div>
+            <div class="statistic-count" data-val="450">000</div>
+            <div class="statistic-head">Happy Client</div>
+          </div>
+        </div>
+        <div class="statistic-item">
+          <div class="statistic-icon hours-worked">
+            <i></i>
+          </div>
+          <div>
+            <div class="statistic-count" data-val="95">00</div>
+            <div class="statistic-head">Hours Worked</div>
+          </div>
+        </div>
+        <div class="statistic-item">
+          <div class="statistic-icon">
+            <i class="fa fa-headset"></i>
+          </div>
+          <div>
+            <div class="statistic-count" data-val="24">00/0</div>
+            <div class="statistic-head">Support Available</div>
+          </div>
+        </div>
+      </div>
+      <div class="about container">
+        <div class="col-left target">
+          <div class="about-img">
+            <img src="./img/img-2.png" alt="img" />
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>Us</span></h1>
+          <h2>Powerful Digital Media Company</h2>
+          <p>
+            We love to create. We at Igoko Avioncs Solutions provides you
+            different kind of digital solutions. Digital Marketing, Search
+            Engine Optimization (SEO), Graphic Designing, Analytics, Ad-words,
+            Web Designing, Web Solutions, Branding, Social Media Marketing, Film
+            & Advertisement etc. We have a experience of more than 4years &
+            having many trustable clients
+          </p>
+          <!-- <a href="#" class="cta">Download Resume</a> -->
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Product Section  -->
+
+    <section class="product-page" id="product-page" onload="loadCategories();">
+      <div class="title">
+        <p>
+          From smartwatches and trackers, to accessories and more, everything
+          you need to find your fit is right here
+        </p>
+      </div>
+      <h1 class="heading">
+        Products by <span class="text-gradient">IGOKO</span>
+      </h1>
+      <div class="product-container card-container" id="product-container">
+        <div class="cards">
+          <div class="card_description loading"></div>
+          <div class="card_image loading"></div>
+          <div class="card_title loading"></div>
+        </div>
+        <div class="cards">
+          <div class="card_description loading"></div>
+          <div class="card_image loading"></div>
+          <div class="card_title loading"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Product Section  -->
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <!-- NEW -->
+        <p>
+          Fill out the form and a member from our it team will get back to you
+          within 24 hours, or scroll down for more ways to get in touch
+        </p>
+        <div class="form-container">
+          <div class="left">
+            <div class="head">
+              <h1>Digital Media team ready to Support</h1>
+              <p>Feel free to reach out</p>
+            </div>
+            <div class="detail">
+              <span>North East Delhi</span><span>+91-8595049981</span>
+            </div>
+            <div class="detail">
+              <span>Mumbai / Banglore / Hyderabad</span
+              ><span>Fill out your details to be connected</span>
+            </div>
+            <div class="icons">
+              <a href="" target="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/igokoavionics/" target="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+
+            <div class="small-circle"></div>
+            <div class="big-circle"></div>
+          </div>
+          <div class="right">
+            <form id="contact-form">
+              <div class="wrapper target">
+                <label for="first-name">First Name</label>
+                <input type="text" placeholder="First Name" id="first-name" />
+              </div>
+              <div class="wrapper target">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  id="last-name"
+                  required
+                />
+              </div>
+              <div class="wrapper target">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  pattern="^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$"
+                  placeholder="your@yoursite.com"
+                  id="email"
+                />
+              </div>
+              <div class="wrapper target">
+                <label for="phone-number">Phone</label>
+                <input
+                  type="text"
+                  pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}"
+                  placeholder="+91 xxxxx-xxxxx"
+                  id="phone"
+                />
+              </div>
+              <div class="wrapper target">
+                <label for="country">Country</label>
+                <input type="text" placeholder="Country" id="country" />
+              </div>
+              <div class="wrapper target">
+                <label for="comments">Comments</label>
+                <input type="text" placeholder="Comments" id="comments" />
+              </div>
+              <button id="submit-button" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- NEW -->
+
+        <div class="contact-items">
+          <div class="contact-item target">
+            <div class="top">
+              <div class="icon target">
+                <img
+                  src="https://img.icons8.com/bubbles/100/000000/phone.png"
+                />
+              </div>
+              <div class="contact-info">
+                <h1>Phone</h1>
+                <h2>+91-8595049981</h2>
+              </div>
+            </div>
+            <a class="bottom" href="tel:8595049981">Call us <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <div class="contact-item target" style="animation-delay: 0.1s">
+           <div class="top">  
+              <div class="icon target">
+                <img
+                  src="https://img.icons8.com/bubbles/100/000000/new-post.png"
+                />
+              </div>
+              <div class="contact-info">
+                <h1>Email</h1>
+                <h2>info@igasolutions.in</h2>
+              </div>
+            </div> 
+            <a class="bottom" href="mailto:info@igasolutions.in">Reach us <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="contact-items">
+          <iframe
+            style="filter: invert(90%)"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.09593896262!2d77.27748382414838!3d28.728259398178533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfea6043a6f81%3A0x7a2de9495ddbd8ab!2sKarawal%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110094!5e0!3m2!1sen!2sin!4v1686299075290!5m2!1sen!2sin"
+            width="100%"
+            height="400px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <footer>
+      <h1 class="footer-top">IGOKO</h1>
+      <div class="footer-mid">
+        <div class="detail">
+          <div class="detail-container">
+            <div class="services">
+              <span>Portfoliio design</span>
+              <span>Ecommerce Website</span>
+              <span>SEO,SMM,ADWORDS ETC</span>
+              <span>Laravel, PHP, ETC</span>
+              <span>Special Projects</span>
+            </div>
+            <div class="languages">
+              <span>PHP Laravel</span>
+              <span>React JS</span>
+              <span>Droopal Wordpress Etc</span>
+              <span>Magento</span>
+              <span>Custom based</span>
+            </div>
+          </div>
+          <div class="social-media">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-acts">
+          <span>Website Terms</span>
+          <span>|</span>
+          <span>Privacy Policy</span>
+          <span>|</span>
+          <span>Accessibility Statement</span>
+          <span>|</span>
+          <span>CA Transparency in Supply Chains Act</span>
+          <span>|</span>
+          <span>Supplier code of Conduct</span>
+          <span>|</span>
+          <span>Marketing to children</span>
+          <span>|</span>
+          <span>Do not sell my Information</span>
+        </div>
+        <h5>© Copyright 2020 - IGOKO || Learn To Lead - All Rights Reserved</h5>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

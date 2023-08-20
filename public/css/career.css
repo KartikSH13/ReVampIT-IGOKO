@@ -1,0 +1,415 @@
+html,
+body,
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+section {
+    min-height: 100vh;
+    min-width: 100vw;
+
+}
+
+/* Header Section */
+.text-gradient {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(100deg, #16b3f4, #6252d8);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.section-title span {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(100deg, #16b3f4, #6252d8);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid linear-gradient(100deg, #16b3f4, #6252d8);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+}
+
+.cta:hover {
+    color: white;
+    background: linear-gradient(100deg, #16b3f4, #6252d8);
+}
+
+.brand h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+
+.brand a {
+    text-decoration: none;
+}
+
+header {
+    min-height: 5rem;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 4rem;
+    z-index: 1;
+}
+
+#header .header {
+    min-height: 5rem;
+    background-color: rgba(6, 9, 66, 0.972);
+    transition: 0.3s ease background-color;
+}
+
+#header .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1450px;
+    padding: 0 10px;
+}
+
+#header .nav-list ul {
+    list-style: none;
+    position: absolute;
+    background-color: rgb(31, 30, 30);
+    left: 174rem;
+    width: 174rem;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s ease left;
+}
+
+#header .nav-list ul.active {
+    left: 0%;
+}
+
+#header .nav-list ul a {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+}
+
+#header .nav-list ul a::after {
+    content: attr(data-after);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: rgba(240, 248, 255, 0.021);
+    font-size: 13rem;
+    letter-spacing: 50px;
+    z-index: -1;
+    transition: 0.3s ease letter-spacing;
+}
+
+#header .nav-list ul li:hover a::after {
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+}
+
+#header .nav-list ul li:hover a {
+    color: rgb(22, 179, 244);
+}
+
+#header .hamburger {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(0.8);
+    margin-right: 20px;
+}
+
+#header .hamburger:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation: hamburger_puls 1s ease infinite;
+}
+
+#header .hamburger .bar {
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+}
+
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: 0.3s ease;
+    transition-property: top, bottom;
+}
+
+#header .hamburger .bar::after {
+    top: 8px;
+}
+
+#header .hamburger .bar::before {
+    bottom: 8px;
+}
+
+#header .hamburger.active .bar::before {
+    bottom: 0;
+}
+
+#header .hamburger.active .bar::after {
+    top: 0;
+}
+
+/* Header Section */
+.career-hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.career-hero .description {
+    width: 40%;
+    margin: 0 10%;
+}
+
+.career-hero .description::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(153, 153, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* border-radius: 0rem 0rem 0rem 25rem; */
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+.career-hero .description::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(170, 231, 255);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* border-radius: 0rem 0rem 0rem 25rem; */
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+.career-hero .description h1,
+.career-hero .description p,
+.career-hero .description button {
+    padding: 10px 5px;
+    margin: 0;
+}
+
+.career-hero .description h1, .hiring .hiring-bottom h1 {
+    font-size: 3rem;
+}
+
+.career-hero .description p,.hiring .hiring-bottom p {
+    font-size: 1.3rem;
+}
+
+.career-hero .description button {
+    padding: 1rem;
+    background-color: #0d0547;
+    border: transparent;
+}
+.career-hero .description button a {
+    font-size: 1rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+.career-hero .frame {
+    width: 50%;
+}
+
+.career-hero .frame::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(155, 227, 255);
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* border-radius: 0rem 0rem 0rem 25rem; */
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+.career-hero .frame::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(159, 159, 255);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* border-radius: 25rem 0rem 0rem 0rem; */
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+.career-hero .frame img {
+    width: 90%;
+}
+
+.career-hero:hover .description::before,
+.career-hero:hover .description::after,
+.career-hero:hover .frame::before,
+.career-hero:hover .frame::after {
+    width: 0px;
+    height: 0px;
+    z-index: -1;
+}
+.hiring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hiring .hiring-top ,.hiring .hiring-bottom{
+    max-width:60% ;
+    text-align: center;
+}
+.hiring-top img{
+    width: 90%;
+}
+
+.job-search{
+    width: 100%;
+}
+.job-search-header{
+    color: white;
+    background-color: rgb(51, 110, 217);
+    min-height: 6rem;
+}
+.job-search-header>h1{
+    letter-spacing: 0.1rem;
+
+}
+.job-search-header,
+.job-search-header form,
+.job-post-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+}
+.job-search-header input,
+.job-search-header select,
+.job-search-header button{
+    padding: 10px;
+    font-size: 1rem;
+}
+.job-search-header button{
+    color: white;
+    background-color: #0d0547;
+    border: none;
+    padding: 10px 20px;
+}
+.job-posts{
+    text-align: center;
+}
+.job-posts>h1{
+    margin: 4rem;
+}
+.job-post-container .job{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 3rem;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+}
+.job-post-container .job:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+.job-post-container .job-title{color: #210acf;margin: 0.5rem 0rem;}
+.job-post-container .job-location{color: #212123;}
+
+@media only screen and (min-width: 1200px) {
+    #header .hamburger {
+        display: none;
+    }
+
+    #header .nav-list ul {
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+    #header .nav-list ul li{
+        display: inline-block;
+    }
+    #header .nav-list ul a{
+        font-size: 1rem;
+    }
+}
